@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Connect 4</title>
+    <link rel="shortcut icon" href="img/connectico.ico">
+    <link rel="stylesheet" type="text/css" href="style/style.css"></link>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Syncopate" />
+</head>
+
+<body>
+    <!--  TITLE  -->
+    <div id="gametitle">  Connect 4  </div>
+    
+    <!--  CANVAS -->
+    <div id="gamediv">
+        <canvas id="gamefield"></canvas>
+    </div>
+    
+    <!--  SCORE -->
+    <div id="scoredisplay">
+        <div id="winner"></div>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;Player&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span id="score"></span>
+        <span>&nbsp;&nbsp;&nbsp;Computer</span>
+        <br/>
+    </div>
+
+    <!--  BUTTON -->
+    <div>
+        <button id="restartbutton" onclick="resetGame()">Play Again
+    </div>
+
+    <!--  CREDITS -->
+    <div>
+        <p id="credits">Made with PIXI.JS by Enzo</p>
+    </div>
+
+    <!-- JS IMPORTS -->
+    <script src="pixi/pixi.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>

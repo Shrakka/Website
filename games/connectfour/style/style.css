@@ -1,0 +1,60 @@
+:root{
+	--myblue: rgb(0,112, 233);
+}
+
+@font-face {
+	font-family: neuropol;
+	src: url(../font/neuropol.ttf);
+}
+
+* {
+	padding: 0;
+	margin: 0; 
+	text-align: center;
+	font-family: "neuropol","Helvetica";
+
+}
+
+#gametitle {
+	font-size: 40px;
+	color: var(--myblue);
+	margin: 15px 0px 15px 0px;
+}
+
+
+#scoredisplay{
+	font-size: 18px;
+	margin: 10px 0px 10px 0px;
+}
+
+#score{
+	font-size: 25px;
+	color: blue;
+	margin: 10px 0px 10px 0px;
+}
+
+#restartbutton{
+	background: #428BCA;
+	color: rgb(255,255,255);
+	font-size: 18px;
+    height: 40px;
+    width: 170px;
+    border-radius: 5px;
+    line-height: 30px;
+    margin: 15px 0px 10px 0px;
+    transition: all 0.3s ease 0s;
+}
+
+#restartbutton:hover {
+	background: #3071A9
+}
+
+#credits{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	text-align: right;
+	font-size: 10px;
+
+}
+

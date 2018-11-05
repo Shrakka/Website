@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Enzo TESTA">
+        <meta name="author" content="Enzo TESTA">
+
+        <link href="static/style/style.css" rel="stylesheet" />
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet">
+
+        <link rel="shortcut icon" href="img/connectico.ico">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Syncopate" />
+        <title>TESTA Enzo</title>
+
+    </head>
+
+    <body>
+
+        <div class="container-fluid text-center">
+            
+            <!-- HEADER -->
+            <div class="header row">
+                <div class="col-xs-offset-2 col-xs-2">
+                    <a id="index" href="index.html" class="texte lien selected">HOME</a>
+                </div>
+                <div class="col-xs-2">
+                    <a id="studies" href="templates/studies.html" class="texte lien">ABOUT ME</a>
+                </div>
+                <div class="col-xs-2">
+                    <a id="portfolio" href="templates/portfolio.html" class="texte lien">PORTFOLIO</a>
+                </div>
+                <div class="col-xs-2">
+                    <a id="portfolio" href="templates/games.html" class="texte lien">GAMES</a>
+                </div>
+            </div>
+
+            <!-- BODY -->
+            <div class="corps">
+
+                <div id="game">
+                    <!--  TITLE  -->
+                    <div id="gametitle">  Connect 4  </div>
+    
+                    <!--  CANVAS -->
+                    <div id="gamediv">
+                        <canvas id="gamefield"></canvas>
+                    </div>
+                    
+                    <!--  SCORE -->
+                    <div id="scoredisplay">
+                        <div id="winner"></div>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;Player&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span id="score"></span>
+                        <span>&nbsp;&nbsp;&nbsp;Computer</span>
+                        <br/>
+                    </div>
+
+                    <!--  BUTTON -->
+                    <div>
+                        <button id="restartbutton" onclick="resetGame()">Play Again
+                    </div>
+
+                    <!--  CREDITS -->
+                    <div>
+                        <p id="credits">Made with PIXI.JS by Enzo</p>
+                    </div>
+                </div>
+
+                <div id="nameandavatar">
+                    <div class="row">
+                        <div class="col-xs-4 text-center">
+                            <p class="texte"><br/>Enzo</p>
+                        </div>
+                            
+                        <div class="col-xs-4 text-center">
+                            <img src="static/img/avatar.jpg" alt="profil.jpg" width=200px class="img-thumbnail img-circle"/>
+                        </div>
+            
+
+                        <div class="col-xs-4 text-center">
+                            <p class="texte"><br/>TESTA</p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="row"></div>
+                        <div class="col-xs-12 text-center">
+                            <p class="texte" style="color: #598e84; margin-top: 170px;">Welcome</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- FOOTER -->
+            <div class="footer">
+                
+                <div class="col-xs-4" style="text-align: left;">
+                    <a href="#" onclick = "toggle('game','nameandavatar');"></a>
+                </div>
+
+                <div class="col-xs-4" style="text-align: center;">
+                    <i class="fa fa-envelope texte"></i>
+                    <span class="texte">&nbsp;&nbsp;enzotesta@hotmail.fr</span>
+                </div>
+
+
+                <div class="col-xs-4" style="text-align: right;">
+                    <a href="https://fr.linkedin.com/in/enzo-testa-ba7174109"><i class="fa fa-linkedin texte"></i></a>
+                    &nbsp;&nbsp;
+                    <a href="https://github.com/Shrakka"><i class="fa fa-github texte"></i></a>
+                    &nbsp;&nbsp;
+                    <a href="https://angel.co/enzo-testa"><i class="fa fa-angellist texte"></i></a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+<script src="pixi/pixi.min.js"></script>
+<script type="text/javascript" src="static/js/main.js"></script>
+<script type="text/javascript" src="static/js/connectfour.js"></script>
+    </body>
+</html>
